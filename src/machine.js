@@ -1,6 +1,6 @@
 import { createMachine } from 'xstate'
 
-const promiseMachine = createMachine({
+export const promiseMachine = createMachine({
   id: 'promise',
   initial: 'pending',
   states: {
@@ -18,5 +18,3 @@ const promiseMachine = createMachine({
     },
   },
 })
-
-export default promiseMachine
