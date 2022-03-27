@@ -23,15 +23,15 @@ const Component = () => {
       <div>
         {/** You can send events to the running service */}
         <button
-          onClick={() => send('RESOLVE')}
           type="button"
+          onClick={() => () => send('RESOLVE')}
           disabled={!state.matches('pending')}
           className="inline-block px-6 py-2.5 bg-green-500 text-white disabled:bg-green-300 font-medium text-xs leading-tight uppercase rounded shadow-md"
         >
           Resolve
         </button>
         <button
-          onClick={() => setTimeout(() => send('REJECT'), 1000)}
+          onClick={() => setTimeout(() => send('RESOLVE'), 70)}
           type="button"
           disabled={!state.matches('pending')}
           className="inline-block ml-4 px-6 py-2.5 bg-red-600 text-white disabled:bg-red-300 font-medium text-xs leading-tight uppercase rounded shadow-md"

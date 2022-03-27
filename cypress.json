@@ -4,5 +4,6 @@
   "pluginsFile": false,
   "baseUrl": "http://localhost:3000",
   "viewportHeight": 400,
-  "viewportWidth": 300
+  "viewportWidth": 300,
+  "defaultCommandTimeout": 1500
 }
